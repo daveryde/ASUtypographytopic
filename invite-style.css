@@ -1,0 +1,153 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 62.5%;
+  font-family: 'Libre Baskerville', Tahoma, sans-serif;
+  overflow: hidden;
+}
+
+.bg-container {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: url('./lace.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#wrapper {
+  width: 96em;
+  background: rgb(114, 25, 77);
+  background: radial-gradient(
+        circle at top left,
+        transparent 45px,
+        rgb(114, 25, 77) 0
+      )
+      top left,
+    radial-gradient(circle at top right, transparent 45px, rgb(114, 25, 77) 0)
+      top right,
+    radial-gradient(
+        circle at bottom right,
+        transparent 45px,
+        rgb(114, 25, 77) 0
+      )
+      bottom right,
+    radial-gradient(circle at bottom left, transparent 45px, rgb(114, 25, 77) 0)
+      bottom left;
+  background-size: 50% 51%;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation: curtain-roll 2.5s ease;
+  animation: curtain-roll 3.5s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes curtain-roll {
+  0% {
+    background-size: 0% 99%;
+  }
+  100% {
+    background-size: 50% 51%;
+  }
+}
+
+@keyframes curtain-roll {
+  0% {
+    background-size: 0% 99%;
+  }
+  100% {
+    background-size: 50% 51%;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 5em;
+  font-family: 'EB Garamond', 'Libre Baskerville', Tahoma, sans-serif;
+  color: #fff;
+  text-shadow: 0 1px hsl(0, 0%, 85%), 0 1px hsl(0, 0%, 80%),
+    0 1px hsl(0, 0%, 75%), 0 1px hsl(0, 0%, 70%), 0 1px hsl(0, 0%, 65%),
+    0 5px 10px black;
+}
+
+h2 {
+  font-size: 3.5em;
+  font-style: oblique;
+  color: white;
+  text-shadow: 1px 1px black, -1px -1px black, 1px 1px black, -1px -1px black;
+}
+
+header {
+  width: 65em;
+  margin-bottom: 2em;
+  font-style: italic;
+}
+
+section#mainContent {
+  width: 65em;
+  margin-bottom: 2em;
+  color: white;
+  text-shadow: 1px 1px black, -1px -1px black, 1px 1px black, -1px -1px black;
+}
+
+section#mainContent time {
+  font-family: sans-serif;
+}
+
+section#mainContent dl {
+  margin-top: 5em;
+}
+
+section#mainContent dt {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+section#mainContent dd {
+  margin: 0;
+  font-size: 2em;
+}
+
+section#mainContent p {
+  margin-top: 3em;
+  font-size: 1.8em;
+}
+
+footer {
+  margin-bottom: 2em;
+  font-family: 'EB Garamond', 'Libre Baskerville', Tahoma, sans-serif;
+  font-size: 1.7em;
+  color: #fff;
+  font-style: italic;
+  text-shadow: 1px 1px black, -1px -1px black, 1px 1px black, -1px -1px black;
+}
